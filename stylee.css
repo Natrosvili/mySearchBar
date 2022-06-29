@@ -1,0 +1,117 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.G {
+    color: blue;
+    font-size: 35px;
+}
+
+.o1 {
+    color: red;
+    font-size: 30px;
+}
+
+.o2 {
+    color: orange;
+    font-size: 30px;
+}
+
+.g {
+    color: blue;
+    font-size: 30px;
+}
+
+.l {
+    color: green;
+    font-size: 30px;
+}
+
+.e {
+    color: red;
+    font-size: 30px;
+}
+
+.two {
+    color: aqua;
+    font-size: 30px;
+}
+
+.point {
+    color:aquamarine;
+    font-size: 30px;
+}
+
+.zero {
+    color: aqua;
+    font-size: 30px;
+}
+
+.flexbox {
+    background: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    margin: 45px;
+}
+
+.search > h1 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.search > div {
+    display: inline-block;
+    position: relative;
+}
+
+.search > div:after {
+    content: "";
+    background: black;
+    width: 15px;
+    height: 35px;
+    position: absolute;
+    top: 60px;
+    right: -10px;
+    transform: rotate(130deg);
+}
+
+.search > div > input {
+    color: black;
+    font-size: 20px;
+    background: transparent;
+    width: 30px;
+    height: 40px;
+    padding: 20px;
+    border: solid 4px black;
+    outline: none;
+    border-radius: 40px;
+    transition: width 0.5s;
+}
+
+.search > div > input::placeholder {
+    color: black;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+
+.search > div > input:focus::placeholder {
+    opacity: 1;
+}
+
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+    width: 250px;
+}
